@@ -6,7 +6,7 @@ function Contact() {
     <h1 className='sectionTitle'>Contact</h1>
     <form action="https://formspree.io/f/meoowdjo" method='post'
      onSubmit={(e) => {
-        e.target.reset(); 
+        setTimeout(() => e.target.reset(), 500); // Clear form after submission
       }}
     >
         <div className='formGroup'>
